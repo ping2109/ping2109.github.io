@@ -16,6 +16,7 @@ body {
 .ie body {
 	filter: dropshadow(color=#000000, offx=0, offy=1);	
 }
+/*front text*/
 h1 {
 	font-size:50px;
 	letter-spacing:-2px;	
@@ -35,7 +36,14 @@ h3 {
 font-size: 30px;
 margin: 0.2em 0;
 text-align: center;
-color: #888;
+color: #000;
+padding: 0 0 0 0;
+}
+h5 {
+font-size: 30px;
+margin: 0.2em 0;
+text-align: center;
+color: #000;
 padding: 0 0 29px;
 }
 .ie h3 {
@@ -76,32 +84,49 @@ a:hover {
 .topSection{ 
 }
 .spacing{
-padding:60px 0;
+padding:45px 0;
 }
 #Header { 
 position: relative;
 width: 100%; 
 z-index: 1;
-padding-top: 50px
+padding-top: 50px;
 }
 .logo{
 width: auto; 
 margin: 0 auto;
+padding: 16px; 
+border-radius: 180px;
+}
+.logos21{
+width: auto; 
+margin: 0 auto;
 padding: 16px;  
 border-radius: 180px;
-padding-bottom:50px;
 }
 .logo h1{
 color:#00c06f;
-font-weight:600;
-
+font-weight:550;
+margin: 0 0 0 0px; 
 }
+.logos21 h1{
+color:#00c06f;
+font-weight:550;
+margin: 0 0 0 0px; 
+}
+/*logo image*/
 .logo img {
 width: 80px;
 height: 108px;
 text-align: center;
-display: block;
-margin: 0 auto; 
+margin: 0 10px 0 0;
+}
+/*logo image s21*/
+.logos21 img {
+width: 200px;
+height: 200px;
+text-align: center;
+margin: 0 0 0 0; 
 }
 .wrapper {
 margin: 0 auto;
@@ -109,25 +134,69 @@ position: relative;
 width: 100%;
 z-index: 1;
 }
+#socialIcons {
+display:block;
+}
+#socialIcons ul {
+margin:40px 0 0 0px; 
+padding:0px;
+text-align: center;
+}
+#socialIcons ul li {
+margin-right: 19px;
+height: 56px;
+line-height: 50px;
+list-style-type: none;
+display: inline-block;
+background: #fff;
+border-radius: 71px;
+padding: 10px;
+border: 1px solid #888;
+}
+#socialIcons ul li a{
+width:34px;
+height:34px; 
+display: inline-block;
+}
+.youtubeIcon, .facebookIcon, .telegramIcon, .pintrestIcon{
+background: url('../images/social-icons.png') -74px 0px;
+}
+ .youtubeIcon:hover, .facebookIcon:hover, .telegramIcon:hover, .pintrestIcon:hover{
+background-position-y: -33px;
+}
+.facebookIcon{
+background-position: 10px 0px;
+}
+.telegramIcon{
+background-position: -245px 0px;
+}
+.pintrestIcon{
+background-position: -331px 0px;
+}
+.s21button{
+display:block;
+text-align:center;
+margin:40px;
+color: #8A8A8A;
+}
 .tempBy{
 display:block;
 text-align:center;
 padding:10px;
-background:#fff;
 color: #8A8A8A;
+background: rgba(55, 55, 55, 0.15);
 }
 .tempBy2{
 display:block;
 text-align:center;
-padding:5px;
-background:#fff;
+padding:10px;
 color: #8A8A8A;
 }
 #Content h2 {
 margin: 0px;
 padding: 0px;
 text-align: center;
-font-size: 42px;
+font-size: 30px;
 font-weight: 300;
 color:#676767;
 margin-bottom:40px;
@@ -246,13 +315,13 @@ float:right;
 margin:10px;
 }
 .subscribe {
-background:#fff;
-}
-.features{
 background: rgba(55, 55, 55, 0.15);
 }
+.features{
+background: rgba(0, 0, 0, 0);
+}
 .features h2 {
-padding: 0 0 30px 0;
+padding: 0 0 60px 0;
 }
 .features h4 { 
 margin: 0px 0 10px 0;
