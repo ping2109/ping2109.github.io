@@ -126,7 +126,7 @@ margin: 0 0 0 0px;
 .logopure10v5 h1{
 color:#00c06f;
 font-weight:550;
-margin: 0 50px 0 0; 
+margin: 0 0 0 0; 
 }
 .logos21 h1{
 color:#00c06f;
@@ -149,7 +149,7 @@ margin: 0 0 0 0;
 }
 /*logo image pure10v5*/
 .logopure10v5 img {
-width: 200px;
+width: 113,8px;
 height: 200px;
 text-align: center;
 margin: 0 0 0 0; 
@@ -219,8 +219,8 @@ padding-bottom:25px;
 color: #000000;
 background: #ffffff;
 border: 1px solid #888;
-margin-left:400px;
-margin-right:400px;
+margin-left:50px;
+margin-right:50px;
 margin-bottom:10px;
 margin-top:10px;
 border-radius: 25px;
