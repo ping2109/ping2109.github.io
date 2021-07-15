@@ -1,8 +1,8 @@
 [
  {
-  "username": "ping2109",
-  "name": "pingmado",
-  "userimg": "https://avatars.githubusercontent.com/u/75196272?v=4",
+  "username": "pingmado",
+  "name": "ping2109",
+  "userimg": "../images/logo.jpg",
   "sort": "updated",
   "order": "desc",
   "includeFork": true,
