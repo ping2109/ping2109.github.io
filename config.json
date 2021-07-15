@@ -1,0 +1,18 @@
+[
+ {
+  "username": "pingmado",
+  "name": "ping2109",
+  "userimg": "../images/logo.jpg",
+  "sort": "updated",
+  "order": "desc",
+  "includeFork": true,
+  "theme": "dark.css",
+  "types": [
+   "owner"
+  ],
+  "twitter": "a",
+  "linkedin": "a",
+  "medium": "a",
+  "dribbble": "a"
+ }
+]
