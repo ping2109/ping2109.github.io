@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NevaOS Pure10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../index.css"></head>
+  <link rel="icon" href="../images/logo.jpg" type="image/jpg"></head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <a href="../index.html" class="go_back"><i class="fas fa-arrow-left"></i></a>
+
+    <div id="blog-display">
+      <h1 id="blog_title">NevaOS Pure10</h1>
+      <div id="blog"><p id="para_0_original">A super clean OS, smooth and stable with the latest features, long term serviced and maintained by many professional developers in the Exynos7870 community!</p></div>
+      <div id="work">
+		<h1>All Releases:</h1>
+	          <div class="projects" id="work_section">
+                        <a href="https://t.me/nevaos/14" target="_blank">
+                        <section>
+                            <div class="section_title">NevaOS Pure10 v1</div>
+                            <div class="about_section">
+                            <span style="display:block;">Initial release, for more informations and download press here.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;">Android 10 OneUI 2.0 {J710x}</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://t.me/nevaos/22" target="_blank">
+                        <section>
+                            <div class="section_title">NevaOS Pure10 v2</div>
+                            <div class="about_section">
+                            <span style="display:block;">Minor update, for more informations and download press here.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;">Android 10 OneUI 2.1 {J710x}</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="../work/pure10/v3.html" target="_blank">
+                        <section>
+                            <div class="section_title">NevaOS Pure10 v3</div>
+                            <div class="about_section">
+                            <span style="display:block;">Huge update, for more informations press here.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;">Android 10 OneUI 2.1 {J710x}</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="../work/pure10/v4.html" target="_blank">
+                        <section>
+                            <div class="section_title">NevaOS Pure10 v4</div>
+                            <div class="about_section">
+                            <span style="display:block;">Small update, for more informations press here.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;">Android 10 OneUI 2.1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="../work/pure10/v5.html" target="_blank">
+                        <section>
+                            <div class="section_title">NevaOS Pure10 v5</div>
+                            <div class="about_section">
+                            <span style="display:block;">Major release, for more informations press here.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;">Android 10 OneUI 2.x</span>
+                            </div>
+                        </section>
+                        </a>
+				</div>
+		</div>
+</div>
+	<div id="footer_blog">
+      <a href="https://t.me/pingmado" target="_blank">Made by pingmado</a><br>
+	  <a href="../old/index.html" target="_blank"><u>See the old version of this website here!</u></a>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("../../config.json", function(user) {
+        var icon = document.createElement("link");
+        icon.setAttribute("rel", "icon");
+        icon.setAttribute("href", user[0].userimg);
+        icon.setAttribute("type", "image/png");
+        document.getElementsByTagName("head")[0].appendChild(icon);
+        document.getElementById(
+          "profile_img_blog"
+        ).style.background = `url('${user[0].userimg}') center center`;
+        document.getElementById(
+          "username_blog"
+        ).innerHTML = `<span style="display:${
+          user[0].name == null || !user[0].name ? "none" : "block"
+        };">${user[0].name}</span>@${user[0].username}<b id="blog_time"></b>`;
+
+        if ((user[0].theme = "dark.css")) {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.1))";
+        } else {
+          document.querySelector("#background_overlay").style.background =
+            "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1))";
+        }
+      });
+    </script>
+  
+
+</body></html>
